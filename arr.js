@@ -6,6 +6,7 @@ findTwoSumPairs(arr, sum);
 function findTwoSumPairs(arr, sum) {
     let map = new Map();
 
+    
     for (let i = 0; i < arr.length; i++) {
         let complement = sum - arr[i];
         if (map.has(complement)) {
