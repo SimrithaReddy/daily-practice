@@ -1,0 +1,14 @@
+1. LRU (least recently used)
+Removes the item that hasn't been touched for the longest time. This is the default in most systems, and a classic interview question.
+	
+2. LFU (least frequently used)
+Removes the item with the fewest uses. It's great when some data is always popular.
+	
+3. FIFO (first in, first out)
+Removes the oldest item, even if it's used all the time. It's simple, but it can throw out your hottest data.
+	
+4. TTL (time to live)
+Every item expires after a set time. Use it when data goes stale, like prices or sessions.
+	
+5. Random
+Picks any item and removes it. There's nothing to track, and it works better than you'd expect.
